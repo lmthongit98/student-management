@@ -1,7 +1,29 @@
-import React, { ReactElement } from 'react';
+import { Box, Button, Paper, Typography } from '@mui/material';
+import { useAppDispatch, useAppSelector } from 'app/hooks';
+import * as React from 'react';
 
-interface LoginPageProps {}
+export default function LoginPage() {
+  return (
+    <Box
+      sx={{
+        display: 'flex',
+        flexFlow: 'row nowrap',
+        justifyContent: 'center',
+        alignItems: 'center',
+        minHeight: '100vh',
+      }}
+    >
+      <Paper elevation={1} sx={{ p: 3 }}>
+        <Typography variant="h5" component="h1">
+          Student Management
+        </Typography>
 
-export default function LoginPage(props: LoginPageProps): ReactElement {
-  return <div>Login Page</div>;
+        <Box mt={4}>
+          <Button fullWidth variant="contained" color="primary">
+            Fake Login
+          </Button>
+        </Box>
+      </Paper>
+    </Box>
+  );
 }

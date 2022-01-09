@@ -6,11 +6,13 @@ import { store } from './app/store';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
+import { CssBaseline } from '@mui/material';
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <Router>
+        <CssBaseline />
         <App />
       </Router>
     </Provider>
