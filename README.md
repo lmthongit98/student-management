@@ -1,4 +1,4 @@
-# ReactJs + Hooks + Redux Saga + MUI + Typescript
+# React Typescript + Hooks + Redux Saga + MUI
 
 ## Requirements
 
